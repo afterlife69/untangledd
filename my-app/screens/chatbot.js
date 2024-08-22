@@ -12,7 +12,7 @@ const Chatbot = () => {
   const [textEmotion, setTextEmotion] = useState('');
   const [cnt,setCnt] = useState(0)
   const TextAnalysiss = async (inp) => { 
-      const apiKey = "YybyAoql88GkUTvk99dAUuSOD548SUrV";
+      const apiKey = "";
       const url = "https://mymodel-mgxnd.eastus2.inference.ml.azure.com/score";
       const data = JSON.stringify({inputs:inp});
       let ans
@@ -36,9 +36,9 @@ const Chatbot = () => {
   };
 
   AWS.config.update({
-    accessKeyId: 'AKIAZQ3DRT3JTSW3MUO2',
-    secretAccessKey: '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',
-    region: 'us-east-1',
+    accessKeyId: '',
+    secretAccessKey: '',
+    region: '',
   });
 
   const s3 =new AWS.S3();
